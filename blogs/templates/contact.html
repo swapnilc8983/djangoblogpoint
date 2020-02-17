@@ -1,0 +1,108 @@
+<section id="" class="section-bg">
+    <div class="container-fluid" style="padding: 8%;">
+        <div class="row mobile-style"
+            style="box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -40px rgba(160, 143, 162, 0.6);background: #ffff;border-radius: 10px;">
+
+            <div class="col-md-3 col-lg-3 mobile-view"
+                style="background: linear-gradient(182deg,rgb(155, 212, 205) 0%,rgba(50,179,156,1) 100%);;border-radius: 10px;color:#ffff;padding: 3%;">
+                <h5 class="title" style="font-weight: 600;">Cover for your health now</h5>
+                <p class="description" style="font-size: 19px;">Expert Advice<br>Post-sales Assistance<br> Health
+                    Insurance Plan<br>Hospital Cash Plan</p><br>
+                <div class="" style=""> <img src="https://www.policyplanner.com/design/img/health-banner-family.png"
+                        class="i-h" alt="" style="height: 250px;"></div>
+
+
+            </div>
+
+            <div class="col-md-9 col-lg-9" style="padding: 2%;">
+                <h3 class="h3font"><b style="color:#006d8d;font-size: 24px;">Hii<span style="color:#F37435">
+                            Enquiry Form For </span>{{blogpage.category}}</b></h3>
+                <h4 class="stepfont" style="font-weight: 600;"> Simple Steps</h4>
+
+                <div class="stepwizard bs-example mobileContentView" style="margin-bottom: 3%;">
+
+                </div>
+
+
+                <form  class="health-form" action="{% url 'blog' blogpage.slug %}" method= "POST" >
+                    {% csrf_token %}
+                        <div class="row" style="margin-bottom: 7%;">
+
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" class="form-control" style="height: 60px;border-radius: 10px;"
+                                        placeholder="First Name" name="firstname">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" style="height: 60px;border-radius: 10px;"
+                                    placeholder="Last Name" name="lastname" >
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="cust_mobile">Mobile Number</label>
+                                    <input type="text" class="form-control" style="height: 60px;border-radius: 10px;"
+                                        placeholder="Mobile Number" minlength="10" name="cust_mobile" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="services">Select Service</label>
+                                    <select class="form-control"  name="services"
+                                        style="border-radius: 10px;height: 60px;" required="">
+                                        <option value="" disabled="" selected="">Select Service </option>
+                                        <option value="Pan Card">Pan Card</option>
+                                        <option value="Aadhar Card">Aadhar Card</option>
+                                        <option value="Life Insurance">Life Insurance</option>
+                                        <option value="Car/ Bike Insurance">Car/ Bike Insurance</option>
+                                        <option value="Other Insurance">Other Insurance</option>
+                                        <option value="Mutual Funds">Mutual Funds</option>
+                                        <option value="ITR">ITR</option>
+                                        <option value="Invetsments Plans">Invetsments Plans</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-12 mb-3 text-center" style="margin: 56px 26px 30px -18px;">
+
+                                <button type="submit" class="btn btn-success " 
+                                    style="padding-left: 70px; padding-right: 70px; background: rgb(243, 116, 53) none repeat scroll 0% 0%;">
+                                    CONTINUE <i class="fa fa-arrow-right"></i>
+                                </button>
+                                {%for msg in messages %}
+                                <div class="alert alert-success alert-dismissible fade show">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                      <i class="nc-icon nc-simple-remove"></i>
+                                    </button>
+                                    <span> <b>{{msg}} </b></span>
+                                  </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+                <!--<div class="box" style="padding:30px;">-->
+                <!--  <div class="icon" style=""><img src="img/heart-icon.png" class="i-h" alt="" style="height:60px"></div>-->
+                <!--  <h4 class="title"><a href="">Features And Benefits Of Health Insurance</a></h4>-->
+                <!--  <p class="description">-->
+                <!--                                 Compare Health Insurance Plans: Health is often at the highest of the priority list of every and each person. Having a healthy body has already become a task.</p>-->
+                <!--</div>-->
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>

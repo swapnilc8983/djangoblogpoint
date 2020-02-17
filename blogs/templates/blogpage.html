@@ -1,0 +1,33 @@
+{% extends 'blogbase.html' %}
+{% block title %} {{blogpage.title}} {% endblock title %}
+{% block description%}{{blogpage.description}} {% endblock description %}
+
+<!-- <h1>{{  blogpage.title }}</h1>
+<p>{{ blogpage.content }}</p> -->
+{% block content %}
+    <!-- <div class = "jumbotron" style="margin: 24px  10px 10px 10px;"> -->
+     {% include 'contact.html' %}
+    <!-- </div> -->
+
+    <section id="faq" style="padding-top: 5%;padding-bottom: 5%;">
+      <div class="container">
+       <!-- <header class="section-header">
+          <h3>Frequently Asked Questions</h3>
+          <p>Ask us anything, we would definitely answer!</p>
+        </header>-->
+
+        <ul id="faq-list" class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1"><h1 class="border-title" align="center"><b style="color:#006d8d;font-size: 24px;"> <span style="color:#F37435">{{blogpage.title}}</b></h1><i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse show" data-parent="#faq-list">                              
+          </div></li>
+          {{ blogpage.content | safe }}
+        </ul>
+      </div>
+    </section><!-- #faq -->
+    
+
+  
+{% endblock content %}
+
+

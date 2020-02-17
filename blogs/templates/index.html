@@ -1,0 +1,55 @@
+{% extends 'blogbase.html' %}
+{% block title %} Home Page {% endblock title %}
+{% block content %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron" style="margin: 113px -12px 30px -4px;">
+    <div class="container">
+      <h1 class="display-3">Blogs Points</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    </div>
+  </div>
+
+<!-- <div class="container-fluid"> -->
+<div class="container">
+    <!-- <div class="row"> -->
+    {% for blog in bloglist %}
+    <div class="card">
+      <div class="card-header">
+        {{blog.category}}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title" > {{blog.title | truncatechars:30}}</h3>
+        <p class="card-text">{{blog.description }}</p>
+        <small class="text-muted">{{blog.Date}}</small> &nbsp;
+        <a href="/{{blog.slug}}" class="btn btn-primary">Read More</a>
+      </div>
+    </div> <br>
+    
+    {%endfor %}
+  
+  
+<div class="pagination text-center" >
+    <ul class="pagination">
+    <!-- <span class="step-links"> -->
+        {% if bloglist.has_previous %}
+        <li class="page-item"><a class="page-link" href="?page=1">&laquo; first</a></li>
+        <li class="page-item"><a class="page-link"href="?page={{ bloglist.previous_page_number }}">previous</a></li>
+        {% endif %}
+
+        <span class="current">
+          <li class="page-item page-link"> Page {{ bloglist.number }} of {{ bloglist.paginator.num_pages }}.</li>
+        </span>
+
+        {% if bloglist.has_next %}
+        <li class="page-item"><a class="page-link" href="?page={{ bloglist.next_page_number }}">next</a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ bloglist.paginator.num_pages }}">last &raquo;</a></li>
+        {% endif %}
+    <!-- </span> -->
+  </ul>
+<!-- </div> -->
+</div>
+</div>
+
+
+{% endblock content %}
