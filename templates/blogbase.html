@@ -1,0 +1,839 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <title>Services Planner</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+   <link rel="icon" type="image/png" href="http://www.servicesplanner.com/img/Favicon.png"> 
+ <!-- <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="https://www.docsplanner.com/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://www.docsplanner.com/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://www.docsplanner.com/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://www.docsplanner.com/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://www.docsplanner.com/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
+
+
+
+  <!-- Main Stylesheet File -->
+  <link href="https://www.docsplanner.com/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  
+<!--  <script type="text/javascript"> -->
+<!--var review_token = 'xRumHHwMW6xTulBWKSnqnOw5dnTa9PUHp60pKGYnsqMh82pXj5'; -->
+<!--var review_target = 'review-container'; -->
+<!--</script> -->
+<!--<script src="https://reviewsonmywebsite.com/js/embed.js?v=8" type="text/javascript"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/stevenmonson/googleReviews@6e8f0d794393ec657dab69eb1421f3a60add23ef/google-places.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCfnMUPbLiBM1mysU4EDhNLmHIcANJRcwk&amp;signed_in=true&amp;libraries=places"></script>
+<script>
+
+jQuery(document).ready(function( $ ) {
+
+   $("#google-reviews").googlePlaces({
+
+     placeId: 'ChIJVVmoX8_BwjsRqKFOmuyfwXc' //Find placeID @: https://developers.google.com/places/place-id
+
+   , render: ['reviews']
+
+   , min_rating: 4
+
+   , max_rows:4
+
+   });
+
+});
+
+</script>
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/39/10/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/39/10/util.js"></script></head>
+
+
+
+<body class=""><button type="button" class="mobile-nav-toggle d-lg-none"><i class="fa fa-bars"></i></button>
+    
+    <style>
+    
+    .carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+
+.card-style {
+    padding: 10%;
+    border-radius: 12px;
+}
+
+.services-header { 
+    margin-bottom: 0px;
+    
+}
+
+
+.allSides
+{
+    border-radius: 10px;
+    /* width: 350px; */
+    /* height: 200px; */
+    border: solid 1px #cccc;
+    /* background-color: #eed; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    /* -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6); */
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin-bottom: 4%;
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .text-align-left-div{
+     
+     text-align:left;
+ }
+ 
+ .margin-align {
+     
+     margin:0px;
+ }
+ 
+}
+
+
+@media (min-width: 1281px) {
+  
+ .text-align-left-div{
+     
+     text-align:left;
+ }
+ 
+ .margin-align {
+     
+     margin:0px;
+ }
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .margin-align {
+     
+     margin:12px;
+  }
+   .mobile-font {
+      
+      font-size:12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .margin-align {
+     
+     margin:12px;
+  }
+   .mobile-font {
+      
+      font-size:12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+ .margin-align {
+     
+     margin:12px;
+  }
+   .mobile-font {
+      
+      font-size:12px;
+  }
+}
+
+
+
+  
+
+.p-box{
+    
+    padding: 16px;
+}
+.op{
+    background: #ffff;
+    border: 1px solid #828282;
+    border-radius: 4px;
+}
+.footer-color{
+    
+    color:rgba(255, 255, 255, 0.86);;
+}
+.new_homepage h2{
+font-size:28px!important;
+color:#000;
+font-weight:500;
+letter-spacing:.5px;
+font-family:Roboto!important
+}
+.fivereasons_new1{
+margin:22px 0
+}
+.fivereasons_new1 h2{
+margin-bottom:75px
+}
+.fivereasons_new1 h4{
+font-size:16px;
+color:#000;
+font-weight:600;
+text-transform:capitalize;
+margin:20px 0 8px 0
+}
+.fivereasons_new1 p{
+color:#7a7a7a;
+font-size:12px;
+line-height:19px
+}
+.fivereasons_new1 img{
+margin:0 auto;
+display:block
+}
+
+a:link    {
+
+  text-decoration:  none;
+
+  } 
+
+</style>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" style="background-color:#ffff;box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -40px rgba(160, 143, 162, 0.6);" class="">
+
+    <div id="topbar" style="padding: 0 0 0px 0px;background: white;">
+      <div class="container">
+        <div class="social-links">
+         <!--   <a href="#" class="" style="margin-top: 12px;color:black;"><span style="color:indianred;"><b>We Are Hiring!</a></span> -->
+         <a><img src="https://www.docsplanner.com/img/secure.png" alt="" class="img-fluid" style="margin: -15px 0px;max-height: 47px;"></a>
+         <a href="https://www.docsplanner.com/career.php" class="" style="color:black; height: 23px; padding-top: 8px; border: 2px solid coral;"><b>We Are Hiring!</b></a><b>
+            <a href="http://servicesplanner.com/aboutUs.php" class="" style="margin-top: 12px;color:black;"> About Us</a>
+             <a href="http://servicesplanner.com/contactUs.php" class="" style="margin-top: 12px;color:black;"><i class="fa fa-phone" style="color:red;"></i> Contact Us</a>
+            
+			<!--<a href="https://web.whatsapp.com/send?phone=919021144063&amp;text=Hello DocsPlanner!" target="_blank"><i class="fa fa-whatsapp" style="color:green;"></i> +91 9021 144 063</b></a>
+			--><a href="https://api.whatsapp.com/send?phone=919021144063" target="_blank"><i class="fa fa-whatsapp" style="color:green;"></i> +91 7798612243</a></b>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding: 7px;">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!--<h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1>-->
+       <!-- <a href="index.php" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid" style="margin: 0px 0px;"></a> -->
+        <a href="index.php" class="scrollto"><img src="/images/images/ServicesPlanner.png" alt="" class="img-fluid" style="margin: -15px 0px;max-height: 62px;"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Loan</a>
+          <ul>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/home-loan.php">Home Loan </a></li> 
+              <li><a class="dropdown-item" href="http://servicesplanner.com/car-loan.php">Car Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/personal-loan.php">Personal Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/business-loan.php">Business Loan</a></li> 
+              <li><a class="dropdown-item" href="http://servicesplanner.com/bike-loan.php">Two Wheeler Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/education-loan.php">Education Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/gold-loan.php">Gold Loan</a></li>
+             
+          </ul>
+          </li>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Cards</a>
+          <ul>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/credit_card.php">Credit Cards</a></li> 
+              <li><a class="dropdown-item" href="online-llp-registration.php">Debit Cards</a></li> 
+             
+          </ul>
+          
+          
+          </li>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Insurance</a>
+          
+      <ul>
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/health-insurance.php">Health Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/life-insurance/term-insurance.php">Term Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/life-insurance/term-insurance.php">Life Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/motor-insurance/car-insurance.php">Car Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/motor-insurance/two-wheeler-insurance.php">Two Wheeler Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/travel-insurance.php">Travel Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/invesment-plans.php">Investment Plans</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/house-insurance.php">House Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/group-insurance.php">Group Insurance</a></li> 
+               <li><a class="dropdown-item" href="https://www.policyplanner.com/corporate-insurance.php">Corporate Insurance</a></li> 
+      </ul>
+          
+          
+          </li>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Mutual Funds</a>
+            <ul>
+
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">SIP Plans</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Fixed Income Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Equity Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Balanced Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Index Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Speciality Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Fund-of-funds</a></li> 
+               
+          
+           </ul>
+          </li>
+
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Basic Needs</a>
+          
+            <ul>
+        <li><a class="dropdown-item" href="https://www.docsplanner.com/pan-card.php">PAN Card</a></li> 
+        <li><a class="dropdown-item" href="#">Rent Agreement</a></li> 
+         <li><a class="dropdown-item" href="#">Marriage Certificate</a></li> 
+            <li><a class="dropdown-item" href="https://www.docsplanner.com/online-trademark-registration.php">Trademark &amp; Copyright</a></li> 
+             <li><a class="dropdown-item" href="#">ISO Registration</a></li> 
+             <li><a class="dropdown-item" href="#">Company Registration</a></li> 
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/income.php">Income Certificate</a></li>
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/domicile.php">Domicile Certificate</a></li> 
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/driving-license.php">Driving Licence</a></li>
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/smartcard-page.php">Smart Card</a></li> 
+              <li><a class="dropdown-item" href="#">Food Licenced</a></li>
+              <li><a class="dropdown-item" href="#">Opinions Consultation</a></li> 
+              <li><a class="dropdown-item" href="#">Merger &amp; Acquisitions</a></li>
+
+
+    </ul>
+          
+          </li>
+          
+           <li class="drop-down"><a href="http://servicesplanner.com/login/index.html" style="font-size: 13px;">Login/Register</a>
+           <ul>
+           <li><a class="dropdown-item" href="http://servicesplanner.com/login/#/login">Login</a></li> 
+           <li><a class="dropdown-item" href="http://servicesplanner.com/login/#/register-user">Register</a></li> 
+         </ul>
+          
+          </li>
+        
+         
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header --><style>
+.demo{ background: #fad2c8; }
+.pricingTable{
+    padding: 25px 10px 70px;
+    margin: 0 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.pricingTable:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0% 85%, 0 0);
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0% 85%, 0 0);
+}
+.pricingTable:after{
+    content: "";
+    width: 70px;
+    height: 30px;
+    background: #1daa72;
+    margin: 0 auto;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.pricingTable .title{
+    padding: 15px 0;
+    margin: 0 -25px 30px;
+    background: #1daa72;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.pricingTable .title:before{
+    content: "";
+    border-top: 15px solid #51836d;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+.pricingTable .title:after{
+    content: "";
+    border-top: 15px solid #51836d;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+.pricingTable .price-value{
+    margin-bottom: 6px;
+    color: #1daa72;
+}
+.pricingTable .currency{
+    display: inline-block;
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: 8px;
+}
+.price-value .amount{
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 700;
+}
+.price-value .month{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-top: 1px solid #8f8f8f;
+    border-bottom: 1px solid #8f8f8f;
+    margin-bottom: 25px;
+}
+.pricingTable .pricing-content li{
+    font-size: 17px;
+    color: #8f8f8f;
+    line-height: 55px;
+}
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #1daa72;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.7s ease 0s;
+}
+.pricingTable .pricingTable-signup:before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translate(0,100%);
+    transition: all 0.6s ease-in-out 0s;
+}
+.pricingTable .pricingTable-signup:hover:before {
+    opacity: 1;
+    transform: translate( 0,-100%);
+}
+.pricingTable.blue:after,
+.pricingTable.blue .title,
+.pricingTable.blue .pricingTable-signup{ background: #49b0ca; }
+.pricingTable.blue .title:after,
+.pricingTable.blue .title:before{ border-top: 15px solid #407a88; }
+.pricingTable.blue .price-value{ color: #49b0ca; }
+.pricingTable.pink:after,
+.pricingTable.pink .title,
+.pricingTable.pink .pricingTable-signup{ background: #f06ace; }
+.pricingTable.pink .price-value{ color: #f06ace; }
+.pricingTable.pink .title:after,
+.pricingTable.pink .title:before{ border-top: 15px solid #773667; }
+.pricingTable.yellow:after,
+.pricingTable.yellow .title,
+.pricingTable.yellow .pricingTable-signup{ background: #49b0ca; }
+.pricingTable.yellow .price-value{ color: #49b0ca; }
+.pricingTable.yellow .title:after,
+.pricingTable.yellow .title:before{ border-top: 15px solid #773667; }
+.pricingTable.red:after,
+.pricingTable.red .title,
+.pricingTable.red .pricingTable-signup{ background: coral; }
+.pricingTable.red .price-value{ color: coral; }
+.pricingTable.red .title:after,
+.pricingTable.red .title:before{ border-top: 15px solid #773667; }
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
+</style>
+
+{%block content%}
+{%endblock content%}
+ 
+	<!--==========================
+      Why Us Section
+    ============================-->
+	
+	
+    
+
+
+   
+  <!--==========================
+    Footer
+  ============================-->
+  
+  
+ <!--==========================
+    Footer
+  ============================-->
+  
+  
+  <footer id="footer" class="section-bg">
+    <div class="footer-top" style="background-color:#000000;">
+      <div class="container-fluid" style="margin-left: 10%;">
+
+        <div class="row">
+
+          <div class="col-lg-12">
+
+               <div class="row">
+
+                
+
+                <div class="col-sm-2">
+                  <div class="category-head">
+                    <h4 style="color:#ffff;">LOAN &amp; MUTUAL FUNDS</h4>
+                    </div>
+                    <div class="category-content">
+                    <ul class="" style="list-style: none;padding: 0;margin: 0;">
+                    <li><a href="http://servicesplanner.com/home-loan.php" style="color:rgba(255, 255, 255, 0.86);">Home Loan</a></li>
+                    <li><a href="http://servicesplanner.com/car-loan.php" style="color:rgba(255, 255, 255, 0.86);">Car Loan</a></li>
+                    <li><a href="http://servicesplanner.com/personal-loan.php" style="color:rgba(255, 255, 255, 0.86);">Personel Loan</a></li>
+                    <li><a href="http://servicesplanner.com/business-loan.php" style="color:rgba(255, 255, 255, 0.86);">Business Loan</a></li>
+                    <li><a href="http://servicesplanner.com/bike-loan.php" style="color:rgba(255, 255, 255, 0.86);">Two Wheeler Loan</a></li>
+                    <li><a href="http://servicesplanner.com/education-loan.php" style="color:rgba(255, 255, 255, 0.86);">Education Loan</a></li>
+                    <li><a href="http://servicesplanner.com/gold-loan.php" style="color:rgba(255, 255, 255, 0.86);">Gold Loan</a></li>
+                    <li><a href="http://servicesplanner.com/index.php" style="color:rgba(255, 255, 255, 0.86);">Mutual Funds</a></li>
+                    </ul>
+                  </div>
+                  
+                  </div>
+                  
+                  <div class="col-sm-2">
+                  <div class="category-head">
+                    <h4 style="color:#ffff;">TERM INSURANCE</h4>
+                     </div>
+                     <div class="category-content">
+                    <ul style="list-style: none;padding: 0;margin: 0;">
+  <li><a href="https://www.policyplanner.com/health-insurance/family-health-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Family Health Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/health-insurance/parents-health-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Parents Health Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/health-insurance/individual-health-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Individual Health Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/health-insurance/maternity-health-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Maternity Health Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/health-insurance/senior-citizen-health-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Senior Citizen Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/insurance-companies-in-india/life-insurance/lic-term-insurance.php" style="color:rgba(255, 255, 255, 0.86);">LIC Term Insurance</a></li>
+
+                     <li><a href="https://www.policyplanner.com/life-insurance/term-insurance.php" style="color:rgba(255, 255, 255, 0.86);;">Term Insurance vs ULIP</a></li>
+                     <li><a href="https://www.policyplanner.com/life-insurance/term-insurance.php" style="color:rgba(255, 255, 255, 0.86);;">Increasing Term Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/life-insurance/term-insurance.php" style="color:rgba(255, 255, 255, 0.86);;">Types of Death Covered</a></li>
+                     <li><a href="https://www.policyplanner.com/life-insurance/term-insurance.php" style="color:rgba(255, 255, 255, 0.86);;">Policy Period</a></li>
+                    </ul>
+                  </div>
+                  </div>
+                  
+                  <div class="col-sm-2">
+                  <div class="category-head">
+                    <h4 style="color:#ffff;">MOTOR INSURANCE</h4>
+                     </div>
+                     <div class="category-content">
+                    <ul style="list-style: none;padding: 0;margin: 0;">
+                      <li><a href="https://www.policyplanner.com/motor-insurance/third-party-two-wheeler-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Third Party Bike Insurance</a></li>
+                     
+                     <li><a href="https://www.policyplanner.com/motor-insurance/car-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Expired Car Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/motor-insurance/car-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Zero Dep Car Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/motor-insurance/car-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Car Insurance Calculator</a></li>
+                     <li><a href="https://www.policyplanner.com/motor-insurance/third-party-car-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Third Party Car Insurance</a></li>
+                    </ul>
+                  </div>
+                  </div>
+                  
+                  
+                  <div class="col-sm-2">
+                  <div class="category-head">
+                    <h4 style="color:#ffff;">TRAVEL INSURANCE</h4>
+                    </div>
+                    <div class="category-content">
+                    <ul style="list-style: none;padding: 0;margin: 0;">
+                      <li><a href="https://www.policyplanner.com/travel-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Get Travel Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/travel-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Claim Travel Insurance</a></li>
+                     <li><a href="https://www.policyplanner.com/travel-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Travel Insurance for Asia</a></li>
+                     <li><a href="https://www.policyplanner.com/travel-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Travel Insurance Calculator</a></li>
+                     <li><a href="https://www.policyplanner.com/travel-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Multiple Travel Insurance</a></li>
+                     
+                    </ul>
+                  </div>
+                </div>
+                
+                
+                 <div class="col-sm-2">
+                  <div class="category-head">
+                    <h4 style="color:#ffff;">INVESTMENT PLANS</h4>
+                     </div>
+                     <div class="category-content">
+                    <ul style="list-style: none;padding: 0;margin: 0;">
+                      <li><a href="http://servicesplanner.com/index.php" style="color:rgba(255, 255, 255, 0.86);">Mutual Fund</a></li>
+                     <li><a href="https://www.policyplanner.com/life-insurance/term-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Life Insurance Companies</a></li>
+                     <li><a href="https://www.policyplanner.com/invesment-plans.php" style="color:rgba(255, 255, 255, 0.86);">ULIP vs Mutual Funds</a></li>
+                     <li><a href="https://www.policyplanner.com/invesment-plans.php" style="color:rgba(255, 255, 255, 0.86);">Types of Investment Policies</a></li>
+                     <li><a href="https://www.policyplanner.com/life-insurance/term-insurance.php" style="color:rgba(255, 255, 255, 0.86);">Types of Life Insurance</a></li>
+                      <li><a href="https://www.policyplanner.com/child-plans.php" style="color:rgba(255, 255, 255, 0.86);">Buy a Child Plan</a></li>
+                     <li><a href="https://www.policyplanner.com/child-plans.php" style="color:rgba(255, 255, 255, 0.86);">Compare Child Plans</a></li>
+                    </ul>
+                  </div>
+                  </div>
+
+            </div>
+
+          </div>
+
+         
+
+          
+
+        </div>
+       
+
+      </div>
+    </div>
+    
+    
+    <div class="container-fluid" style="color: #696969;padding: 1%;text-align:center;background: #303030;">
+        <div class="row">
+            
+            <div class="col-sm-4" style="float:left!important;margin-top:1%;">
+                 <a href="http://servicesplanner.com/aboutUs.php" style="color:rgba(255, 255, 255, 0.86);;">
+                              About Us
+                          </a> | 
+                          <a href="http://servicesplanner.com/contactUs.php" style="color:rgba(255, 255, 255, 0.86);;">
+                              Contact Us
+                          </a> | 
+                           <a href="http://servicesplanner.com/termsConditions.php" style="color:rgba(255, 255, 255, 0.86);;"> Videos</a> | 
+                            <a href="./terms-of-service.php" style="color:rgba(255, 255, 255, 0.86);;">
+                              Terms
+                          </a> |  <a href="http://servicesplanner.com/termsConditions.php" style="color:rgba(255, 255, 255, 0.86);;">
+                              Privacy Policy
+                          </a>
+                </div>
+            
+        <div class="col-sm-4">
+       <a href="#" class="btn btn-just-icon btn-link btn-facebook" style="color:rgba(255, 255, 255, 0.86);;">
+                                    <i class="fa fa-facebook-square fa-2x"></i>
+                                </a>
+                                 <a href="#" class="btn btn-just-icon btn-link btn-google" style="color:rgba(255, 255, 255, 0.86);;">
+                                    <i class="fa fa-google-plus fa-2x"></i>
+                                </a>
+                                 <a href="#" class="btn btn-just-icon btn-link btn-youtube" style="color:rgba(255, 255, 255, 0.86);;">
+                                    <i class="fa fa-youtube-play fa-2x"></i>
+                                </a>
+                                 <a href="#" class="btn btn-just-icon btn-link btn-twitter" style="color:rgba(255, 255, 255, 0.86);;">
+                                    <i class="fa fa-twitter fa-2x"></i>
+                                </a>
+        </div>
+        
+        <div class="col-sm-4" style="float:right!important;margin-top:1%;">
+            <span style="color:rgba(255, 255, 255, 0.86);;">
+       ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>2020, servicesplanner.com </span>
+        </div>
+        
+       
+        </div>
+        
+        
+        
+        
+        
+              
+    </div>
+  
+
+    <div class="container-fluid" style="color: ##000000;padding: 2%;text-align: center;background: #ffff;">
+      <div class="copyright" style="margin-bottom: 2%;">
+       <div class="row text-center" style="margin-bottom: 2%;">
+           
+        <div class="col-sm-6" style="margin-top:1%;">
+             <img src="/images/images/ServicesPlanner.png" alt="" style="height: 46px;" class="img-fluid"><br><br>
+                    <span style="font-size: 14px;line-height:16px;color:rgba(255, 255, 255, 0.86);;margin-bottom: 0;"></span>
+                    
+                    <p style="color:#000000;">Services Planner Office No. B-03, 
+                    KPCT Mall, Near Vishal Mega Mart,<br> Fatima Nagar, 
+                    Wanawadi, Pune 411013.<br> </p>
+                 
+                </div>
+                
+                
+                <div class="col-sm-2" style="margin-top:3%;">
+                <!--<h5 style="color:#000000;">Secure Website</h5>-->
+                    <a href="https://www.gogetssl.com"><img src="https://www.gogetssl.com/skin/i/ggssl-site-seal-v1-dark.png" border="0"></a>
+                </div>
+        
+                 <div class="col-sm-3">
+                <h5 style="color:#000000;">Payment Methods</h5>
+            <img src="https://www.docsplanner.com/img/QRCODE.jpg" alt="/QRCODE" style="height: 136px;" class="img-fluid">
+        </div>
+       </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://www.docsplanner.com/lib/jquery/jquery.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/easing/easing.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/mobile-nav/mobile-nav.js"></script><nav class="mobile-nav d-lg-none">
+        <ul>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Loan</a>
+          <ul>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/home-loan.php">Home Loan </a></li> 
+              <li><a class="dropdown-item" href="http://servicesplanner.com/car-loan.php">Car Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/personal-loan.php">Personal Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/business-loan.php">Business Loan</a></li> 
+              <li><a class="dropdown-item" href="http://servicesplanner.com/bike-loan.php">Two Wheeler Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/education-loan.php">Education Loan</a></li>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/gold-loan.php">Gold Loan</a></li>
+             
+          </ul>
+          </li>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Cards</a>
+          <ul>
+              <li><a class="dropdown-item" href="http://servicesplanner.com/credit_card.php">Credit Cards</a></li> 
+              <li><a class="dropdown-item" href="online-llp-registration.php">Debit Cards</a></li> 
+             
+          </ul>
+          
+          
+          </li>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Insurance</a>
+          
+      <ul>
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/health-insurance.php">Health Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/life-insurance/term-insurance.php">Term Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/life-insurance/term-insurance.php">Life Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/motor-insurance/car-insurance.php">Car Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/motor-insurance/two-wheeler-insurance.php">Two Wheeler Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/travel-insurance.php">Travel Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/invesment-plans.php">Investment Plans</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/house-insurance.php">House Insurance</a></li> 
+              <li><a class="dropdown-item" href="https://www.policyplanner.com/group-insurance.php">Group Insurance</a></li> 
+               <li><a class="dropdown-item" href="https://www.policyplanner.com/corporate-insurance.php">Corporate Insurance</a></li> 
+      </ul>
+          
+          
+          </li>
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Mutual Funds</a>
+            <ul>
+
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">SIP Plans</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Fixed Income Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Equity Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Balanced Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Index Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Speciality Funds</a></li> 
+                <li><a class="dropdown-item" href="http://servicesplanner.com/index.php">Fund-of-funds</a></li> 
+               
+          
+           </ul>
+          </li>
+
+          <li class="drop-down"><a href="http://servicesplanner.com/index.php" style="font-size: 13px;">Basic Needs</a>
+          
+            <ul>
+        <li><a class="dropdown-item" href="https://www.docsplanner.com/pan-card.php">PAN Card</a></li> 
+        <li><a class="dropdown-item" href="#">Rent Agreement</a></li> 
+         <li><a class="dropdown-item" href="#">Marriage Certificate</a></li> 
+            <li><a class="dropdown-item" href="https://www.docsplanner.com/online-trademark-registration.php">Trademark &amp; Copyright</a></li> 
+             <li><a class="dropdown-item" href="#">ISO Registration</a></li> 
+             <li><a class="dropdown-item" href="#">Company Registration</a></li> 
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/income.php">Income Certificate</a></li>
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/domicile.php">Domicile Certificate</a></li> 
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/driving-license.php">Driving Licence</a></li>
+              <li><a class="dropdown-item" href="https://www.docsplanner.com/smartcard-page.php">Smart Card</a></li> 
+              <li><a class="dropdown-item" href="#">Food Licenced</a></li>
+              <li><a class="dropdown-item" href="#">Opinions Consultation</a></li> 
+              <li><a class="dropdown-item" href="#">Merger &amp; Acquisitions</a></li>
+
+
+    </ul>
+          
+          </li>
+          
+           <li class="drop-down"><a href="http://servicesplanner.com/login/index.html" style="font-size: 13px;">Login/Register</a>
+           <ul>
+           <li><a class="dropdown-item" href="http://servicesplanner.com/login/#/login">Login</a></li> 
+           <li><a class="dropdown-item" href="http://servicesplanner.com/login/#/register-user">Register</a></li> 
+         </ul>
+          
+          </li>
+        
+         
+        </ul>
+      </nav><div class="mobile-nav-overly"></div>
+  <script src="https://www.docsplanner.com/lib/wow/wow.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/waypoints/waypoints.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/counterup/counterup.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="https://www.docsplanner.com/lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="https://www.docsplanner.com/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="https://www.docsplanner.com/js/main.js"></script>
+  
+  <script>
+      $(".category-head").click(function () {
+        $(this).next().slideToggle('fast');
+        });
+  </script>
+
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>
