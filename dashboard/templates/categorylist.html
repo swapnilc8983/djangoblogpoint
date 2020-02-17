@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %} All Blog View {% endblock title %}
+{% block Category %}<li class="active"> {% endblock Category %}
+
+  {% block content %}
+
+    
+
+    <div class="content">
+    <a class="btn btn-primary" href="{% url 'createcategory' %}"> Add New Category </a>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <!-- Search Blog -->
+              <!-- <form method="GET">
+                <h6 class="card-title"> Search : </h6>
+                {{myFilter.form}}
+                <button class="btn btn-primary" type="submit"> Search</button>
+                <hr>
+              </form> -->
+              <!-- End Search -->
+              <h4 class="card-title"> Category List</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th>
+                      No.
+                    </th>
+                    <th>
+                      Category
+                    </th>
+                    
+                  </thead>
+                  {% for cat in categorylist %}
+                  <tbody>
+                    <tr>
+                      <td>
+                        {{cat.id}}
+                      </td>
+                      <td>
+                        <strong>{{cat.category}}</strong>
+                      </td>
+                      <td>
+                        <!-- <a href="/{{blog.slug}}"> <i class="fa fa-eye" style='font-size:15px;color:gray'></i></a> -->
+                        <a href="{% url 'updatecategory' cat.id %}"> &nbsp; &nbsp;<i class="fa fa-edit"
+                            style='font-size:15px;color:blue'></i></i></a>
+                       
+
+                      </td>
+                    </tr>
+                  </tbody>
+                  {% endfor %}
+                </table>
+                <!-- Pagination -->
+                {% include 'pagination.html' %}
+                <!--End  Pagination -->
+               
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  {% endblock content %}

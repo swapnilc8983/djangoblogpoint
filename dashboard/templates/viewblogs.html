@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+{% block title %} All Blog View {% endblock title %}
+
+{% block activeblog %}<li class="active">{% endblock activeblog %}
+  {% block content %}
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-5 col-md-4">
+                <div class="icon-big text-center icon-warning">
+                  <i class="nc-icon nc-globe text-warning"></i>
+                </div>
+              </div>
+              <div class="col-7 col-md-8">
+                <div class="numbers">
+                  <p class="card-category"><strong> Published Blogs</strong></p>
+                  <p class="card-title">{{Publishcount}}
+                  </p>
+                  <p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer ">
+            <hr>
+            <div class="stats">
+              <i class="fa fa-refresh"></i> Update Now
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-5 col-md-4">
+                <div class="icon-big text-center icon-warning">
+                  <i class="nc-icon nc-money-coins text-success"></i>
+                </div>
+              </div>
+              <div class="col-7 col-md-8">
+                <div class="numbers">
+                  <p class="card-category"><strong> Draft Blogs</strong></p>
+                  <p class="card-title">{{Draftcount}}
+                  </p>
+                  <p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer ">
+            <hr>
+            <div class="stats">
+              <i class="fa fa-calendar-o"></i> Last day
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-5 col-md-4">
+                <div class="icon-big text-center icon-warning">
+                  <i class="nc-icon nc-vector text-danger"></i>
+                </div>
+              </div>
+              <div class="col-7 col-md-8">
+                <div class="numbers">
+                  <p class="card-category"><strong> Pending Blogs</strong></p>
+                  <p class="card-title">{{Pendingcount}}
+                  </p>
+                  <p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer ">
+            <hr>
+            <div class="stats">
+              <i class="fa fa-clock-o"></i> In the last hour
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-5 col-md-4">
+                <div class="icon-big text-center icon-warning">
+                  <i class="nc-icon nc-favourite-28 text-primary"></i>
+                </div>
+              </div>
+              <div class="col-7 col-md-8">
+                <div class="numbers">
+                  <p class="card-category"><strong>Total Count</strong></p>
+                  <p class="card-title"><strong>{{totalcount}}</strong>
+                  </p>
+                  <p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer ">
+            <hr>
+            <div class="stats">
+              <i class="fa fa-refresh"></i> Update now
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-primary" href="{% url 'createblog' %}"> Add New Blog </a>
+
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <!-- Search Blog -->
+              <form method="GET">
+                <h6 class="card-title"> Search : </h6>
+                {{myFilter.form}}
+                <button class="btn btn-primary" type="submit"> Search</button>
+                <hr>
+              </form>
+              <!-- End Search -->
+              <h4 class="card-title"> Blog List</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th>
+                      No.
+                    </th>
+                    <th>
+                      Blog
+                    </th>
+                    <th>
+                      Category
+                    </th>
+                    <th>
+                      Date
+                    </th>
+                    <th>
+                      Status
+                    </th>
+                    <th>
+                      Operations
+                    </th>
+                  </thead>
+                  {% for blog in Blogs %}
+                  <tbody>
+                    <tr>
+                      <td>
+                        {{blog.id}}
+                      </td>
+                      <td>
+                        <strong>{{blog.title}}</strong>
+                      </td>
+
+                      <td>
+                        {{blog.category}}
+                      </td>
+
+                      <td>
+                        {{blog.Date}}
+                      </td>
+
+                      <td>
+                        {{blog.status}}
+                      </td>
+                      <td>
+                        <a href="/{{blog.slug}}"> <i class="fa fa-eye" style='font-size:15px;color:gray'></i></a>
+                        <a href="{% url 'updateblog' blog.slug %}"> &nbsp; &nbsp;<i class="fa fa-edit"
+                            style='font-size:15px;color:blue'></i></i></a>
+                        <a href="{% url 'deleteblog' blog.slug %}"> &nbsp; &nbsp;<i class="fa fa-trash"
+                            style='font-size:15px;color:red'></i></a>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                  {% endfor %}
+                </table>
+                <!-- Pagination -->
+                {% include 'pagination.html' %}
+                <!--End  Pagination -->
+               
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  {% endblock content %}
